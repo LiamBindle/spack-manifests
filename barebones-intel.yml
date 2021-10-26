@@ -1,0 +1,5 @@
+spack:
+    specs:
+      - intel-oneapi-compilers
+      - intel-mpi
+    concretization: together
