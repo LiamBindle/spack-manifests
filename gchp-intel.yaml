@@ -1,8 +1,7 @@
 spack:
     specs:
-      - intel-oneapi-compilers
-      - intel-mpi
-      - netcdf-c
-      - netcdf-fortran
-      - esmf
+      - intel-mpi %intel-oneapi-compilers
+      - netcdf-c %intel-oneapi-compilers
+      - netcdf-fortran %intel-oneapi-compilers
+      - esmf %intel-oneapi-compilers
     concretization: together
