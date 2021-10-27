@@ -13,3 +13,4 @@ spack:
   packages:
     all:
       compiler: [intel]
+      target: [x86_64]
