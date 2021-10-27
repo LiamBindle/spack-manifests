@@ -1,0 +1,14 @@
+# This is a spack environment manifest file for GCHP dependencies using Intel compilers and Intel MPI. 
+
+spack:
+  specs:
+    - cmake
+    - intel-mpi
+    - hdf5
+    - netcdf-c
+    - netcdf-fortran
+    - esmf -pnetcdf -xerces -pio
+  concretization: together
+  packages:
+    all:
+      compiler: [intel]
