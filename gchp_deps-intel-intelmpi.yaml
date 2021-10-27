@@ -1,4 +1,5 @@
-# This is a spack environment manifest file for GCHP dependencies using Intel compilers and Intel MPI. 
+# This is a spack environment manifest file for GCHP dependencies using Intel compilers and Intel MPI.
+#   Preconditions: An "intel" compiler needs to be installed.  
 
 spack:
   specs:
