@@ -2,15 +2,17 @@
 # Preconditions: An "intel" compiler needs to be installed.  
 
 spack:
-  specs:
-    - cmake
-    - intel-mpi@2019.10.317
-    - hdf5 -mpi -tools
-    - netcdf-c
-    - netcdf-fortran
-    - esmf@8.0.1 -pnetcdf -xerces -pio
-  concretization: together
+  config:
+    install_missing_compilers: true
   packages:
     all:
-      compiler: [gcc@9.4.0]
       target: [x86_64]
+  specs:
+    - cmake
+    - intel-mpi@2019.10.317%gcc@9.4.0
+    - hdf5%gcc@9.4.0 -mpi -tools
+    - netcdf-c%gcc@9.4.0
+    - netcdf-fortran%gcc@9.4.0
+    - esmf@8.0.1%gcc@9.4.0 -pnetcdf -xerces -pio
+  concretization: together
+  
