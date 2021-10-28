@@ -5,7 +5,7 @@ spack:
   specs:
     - cmake
     - intel-mpi
-    - hdf5
+    - hdf5 -mpi -tools
     - netcdf-c
     - netcdf-fortran
     - esmf -pnetcdf -xerces -pio
