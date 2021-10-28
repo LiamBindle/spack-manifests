@@ -1,0 +1,18 @@
+# This is a spack environment manifest file for GCHP dependencies using Intel compilers and Intel MPI.
+# Preconditions: An "intel" compiler needs to be installed.  
+
+spack:
+  config:
+    install_missing_compilers: true
+  packages:
+    all:
+      target: [x86_64]
+  specs:
+    - cmake
+    - intel-mpi@2019.10.317%intel-oneapi-compilers@2021.3.0
+    - hdf5%intel-oneapi-compilers@2021.3.0 -mpi -tools
+    - netcdf-c%intel-oneapi-compilers@2021.3.0
+    - netcdf-fortran%intel-oneapi-compilers@2021.3.0
+    - esmf@8.0.1%intel-oneapi-compilers@2021.3.0 -pnetcdf -xerces -pio
+  concretization: together
+  
