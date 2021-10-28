@@ -8,7 +8,7 @@ spack:
     - hdf5 -mpi -tools
     - netcdf-c
     - netcdf-fortran
-    - esmf -pnetcdf -xerces -pio
+    - esmf@8.0.1 -pnetcdf -xerces -pio
   concretization: together
   packages:
     all:
