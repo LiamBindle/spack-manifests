@@ -12,5 +12,5 @@ spack:
   concretization: together
   packages:
     all:
-      compiler: [intel]
+      compiler: [intel-oneapi-compilers]
       target: [x86_64]
