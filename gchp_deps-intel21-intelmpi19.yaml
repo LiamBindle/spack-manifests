@@ -6,7 +6,7 @@ spack:
     all:
       target: [x86_64]
   specs:
-    - cmake
+    - cmake -openssl -ncurses
     - intel-mpi@2019.10.317%intel@2021.3.0
     - hdf5%intel@2021.3.0 -mpi -tools
     - netcdf-c%intel@2021.3.0
