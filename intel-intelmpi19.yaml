@@ -7,10 +7,10 @@ spack:
       target: [x86_64]
   specs:
     - cmake -openssl -ncurses
-    - intel-mpi@2019.10.317%intel@2021.3.0
-    - hdf5%intel@2021.3.0 -mpi -tools
-    - netcdf-c%intel@2021.3.0
-    - netcdf-fortran%intel@2021.3.0
-    - esmf@8.0.1%intel@2021.3.0 -pnetcdf -xerces -pio
+    - intel-mpi@2019.10.317%intel
+    - hdf5%intel -mpi -tools
+    - netcdf-c%intel
+    - netcdf-fortran%intel
+    - esmf@8.0.1%intel -pnetcdf -xerces -pio
   concretization: together
   
