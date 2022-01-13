@@ -1,0 +1,12 @@
+spack:
+  packages:
+    all:
+      target: [x86_64]
+  specs:
+    - cmake
+    - intel-mpi@2019.10.317%intel@2021.3.0
+    - hdf5%intel@2021.3.0 -mpi -tools
+    - netcdf-c%intel@2021.3.0
+    - netcdf-fortran%intel@2021.3.0
+    - esmf@8.0.1%intel@2021.3.0 -pnetcdf -xerces -pio
+  concretization: together
